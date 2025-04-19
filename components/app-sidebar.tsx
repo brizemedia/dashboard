@@ -1,4 +1,4 @@
-import {ChevronsUpDown, Home, BookHeadphones} from "lucide-react";
+import { ChevronsUpDown, Home, BookHeadphones } from "lucide-react";
 import {
   Sidebar,
   SidebarContent,
@@ -15,8 +15,8 @@ import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
-} from "@/components/ui/collapsible"
-import {Button} from "@/components/ui/button";
+} from "@/components/ui/collapsible";
+import { Button } from "@/components/ui/button";
 
 export function AppSidebar() {
   return (
@@ -40,12 +40,11 @@ export function AppSidebar() {
                     <Button variant="ghost" size="sm">
                       <BookHeadphones />
                       <span>Media</span>
-                      <ChevronsUpDown className="h-4 w-4"/>
+                      <ChevronsUpDown className="h-4 w-4" />
                     </Button>
                   </CollapsibleTrigger>
                   <CollapsibleContent>
                     <SidebarMenuSub>
-
                       <SidebarMenuItem key="Plex">
                         <SidebarMenuButton asChild>
                           <Link href="http://media.lan:32400/web/">
@@ -93,7 +92,6 @@ export function AppSidebar() {
                           </Link>
                         </SidebarMenuButton>
                       </SidebarMenuItem>
-
                     </SidebarMenuSub>
                   </CollapsibleContent>
                 </SidebarMenuItem>
