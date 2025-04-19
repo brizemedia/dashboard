@@ -17,3 +17,4 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ## Architecture
 
 * This is a [Next.js](https://nextjs.org) project
+* [Shadcn Component Library](https://ui.shadcn.com/docs/)
