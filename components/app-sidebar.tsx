@@ -132,6 +132,22 @@ export function AppSidebar() {
                           </Link>
                         </SidebarMenuButton>
                       </SidebarMenuItem>
+                      {/* Pihole01 */}
+                      <SidebarMenuItem key="Pihole">
+                        <SidebarMenuButton asChild>
+                          <Link href="http://pihole.lan:8001/admin/">
+                            <span>Pihole</span>
+                          </Link>
+                        </SidebarMenuButton>
+                      </SidebarMenuItem>
+                      {/* Pihole02 */}
+                      <SidebarMenuItem key="Pihole02">
+                        <SidebarMenuButton asChild>
+                          <Link href="http://rpi02.lan/admin/">
+                            <span>Pihole02</span>
+                          </Link>
+                        </SidebarMenuButton>
+                      </SidebarMenuItem>
                     </SidebarMenuSub>
                   </CollapsibleContent>
                 </SidebarMenuItem>
@@ -154,6 +170,22 @@ export function AppSidebar() {
                         <SidebarMenuButton asChild>
                           <Link href="http://docker01.lan:8002/i/">
                             <span>FreshRSS</span>
+                          </Link>
+                        </SidebarMenuButton>
+                      </SidebarMenuItem>
+                      {/* Minecraft SMP */}
+                      <SidebarMenuItem key="MinecraftSmp">
+                        <SidebarMenuButton asChild>
+                          <Link href="http://dev01.lan/bozo-world/unmined.index.html">
+                            <span>Minecraft SMP</span>
+                          </Link>
+                        </SidebarMenuButton>
+                      </SidebarMenuItem>
+                      {/* Minecraft Creative */}
+                      <SidebarMenuItem key="MinecraftCreative">
+                        <SidebarMenuButton asChild>
+                          <Link href="http://dev01.lan/hoppy-world/unmined.index.html">
+                            <span>Minecraft Creative</span>
                           </Link>
                         </SidebarMenuButton>
                       </SidebarMenuItem>
