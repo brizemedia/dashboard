@@ -13,7 +13,7 @@ bun dev
 ```
 Run prettier:
 
-`prettier --write components`
+`prettier --write components app`
 
 Run linting:
 
@@ -35,5 +35,5 @@ Build Container:
 `docker build -t dashboard-docker .`
 
 Run Container:
-`docker run -p 3000:3000 dashboard-docker`
+`sudo docker run -p 80:3000 dashboard-docker`
 

@@ -1,4 +1,10 @@
-import { ChevronsUpDown, Home, BookHeadphones } from "lucide-react";
+import {
+  ChevronsUpDown,
+  Home,
+  BookHeadphones,
+  Server,
+  Globe,
+} from "lucide-react";
 import {
   Sidebar,
   SidebarContent,
@@ -34,6 +40,7 @@ export function AppSidebar() {
                   </Link>
                 </SidebarMenuButton>
               </SidebarMenuItem>
+              {/* Media */}
               <Collapsible className="group/collapsible">
                 <SidebarMenuItem>
                   <CollapsibleTrigger asChild>
@@ -45,6 +52,7 @@ export function AppSidebar() {
                   </CollapsibleTrigger>
                   <CollapsibleContent>
                     <SidebarMenuSub>
+                      {/* Plex */}
                       <SidebarMenuItem key="Plex">
                         <SidebarMenuButton asChild>
                           <Link href="http://media.lan:32400/web/">
@@ -52,7 +60,7 @@ export function AppSidebar() {
                           </Link>
                         </SidebarMenuButton>
                       </SidebarMenuItem>
-
+                      {/* NZBGet */}
                       <SidebarMenuItem key="NzbGet">
                         <SidebarMenuButton asChild>
                           <Link href="http://media.lan:6789">
@@ -60,15 +68,15 @@ export function AppSidebar() {
                           </Link>
                         </SidebarMenuButton>
                       </SidebarMenuItem>
-
-                      <SidebarMenuItem key="Soanrr">
+                      {/* Sonarr */}
+                      <SidebarMenuItem key="Sonarr">
                         <SidebarMenuButton asChild>
                           <Link href="http://media.lan:8989">
                             <span>Sonarr</span>
                           </Link>
                         </SidebarMenuButton>
                       </SidebarMenuItem>
-
+                      {/* Readarr */}
                       <SidebarMenuItem key="Readarr">
                         <SidebarMenuButton asChild>
                           <Link href="http://media.lan:8787">
@@ -76,7 +84,7 @@ export function AppSidebar() {
                           </Link>
                         </SidebarMenuButton>
                       </SidebarMenuItem>
-
+                      {/* Radarr */}
                       <SidebarMenuItem key="Radarr">
                         <SidebarMenuButton asChild>
                           <Link href="http://media.lan:7878">
@@ -84,11 +92,68 @@ export function AppSidebar() {
                           </Link>
                         </SidebarMenuButton>
                       </SidebarMenuItem>
-
+                      {/* Lidarr */}
                       <SidebarMenuItem key="Lidarr">
                         <SidebarMenuButton asChild>
                           <Link href="http://media.lan:8686">
                             <span>Lidarr</span>
+                          </Link>
+                        </SidebarMenuButton>
+                      </SidebarMenuItem>
+                    </SidebarMenuSub>
+                  </CollapsibleContent>
+                </SidebarMenuItem>
+              </Collapsible>
+              {/* Systems */}
+              <Collapsible className="group/collapsible">
+                <SidebarMenuItem>
+                  <CollapsibleTrigger asChild>
+                    <Button variant="ghost" size="sm">
+                      <Server />
+                      <span>Systems</span>
+                      <ChevronsUpDown className="h-4 w-4" />
+                    </Button>
+                  </CollapsibleTrigger>
+                  <CollapsibleContent>
+                    <SidebarMenuSub>
+                      {/* SDN */}
+                      <SidebarMenuItem key="SDN">
+                        <SidebarMenuButton asChild>
+                          <Link href="https://192.168.0.2/#dashboard">
+                            <span>SDN</span>
+                          </Link>
+                        </SidebarMenuButton>
+                      </SidebarMenuItem>
+                      {/* UptimeKuma */}
+                      <SidebarMenuItem key="UptimeKuma">
+                        <SidebarMenuButton asChild>
+                          <Link href="http://docker01.lan:3001/dashboard">
+                            <span>Uptime Kuma</span>
+                          </Link>
+                        </SidebarMenuButton>
+                      </SidebarMenuItem>
+                    </SidebarMenuSub>
+                  </CollapsibleContent>
+                </SidebarMenuItem>
+              </Collapsible>
+
+              {/* Other Stuff */}
+              <Collapsible className="group/collapsible">
+                <SidebarMenuItem>
+                  <CollapsibleTrigger asChild>
+                    <Button variant="ghost" size="sm">
+                      <Globe />
+                      <span>Other Stuff</span>
+                      <ChevronsUpDown className="h-4 w-4" />
+                    </Button>
+                  </CollapsibleTrigger>
+                  <CollapsibleContent>
+                    <SidebarMenuSub>
+                      {/* FreshRss */}
+                      <SidebarMenuItem key="FreshRss">
+                        <SidebarMenuButton asChild>
+                          <Link href="http://docker01.lan:8002/i/">
+                            <span>FreshRSS</span>
                           </Link>
                         </SidebarMenuButton>
                       </SidebarMenuItem>
